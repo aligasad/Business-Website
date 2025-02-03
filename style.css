@@ -1,0 +1,985 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body{
+  background-color: #fbfbfb;
+}
+h1,h2,h3{
+  font-weight: 900;
+  font-family: Poppins;
+}
+h4,h5,h6{
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: #14bf98;
+}
+
+li{
+  list-style-type: square ;
+  list-style-position: inside;
+}
+li::marker{
+  color: #14bf98;
+}
+li p{
+  color: #333;
+}
+
+
+
+
+.header{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  z-index: 9999;
+  width: 100vw;
+  padding:20px 50px;
+  background-color: #113448;
+  /* background: linear-gradient(#14bf98,#008b8b00, #008b8b00,#8fbc8f71, #69696900,#008b8b00, #14bf98), url(foot.jpg); */
+  
+}
+.baricon{
+  display: none;
+}
+.left>img{
+  height: 30px;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* width: 50%; */
+}
+.right .nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.nav li{
+  margin-right: 30px;
+  list-style: none;  
+}
+.nav a:hover{
+  color: #14bf98;
+  transition: 0.2s;
+}
+a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.icon ul{
+  display: flex;
+}
+.icon a{
+  display: flex;
+  align-items: center;
+}
+.icon li{
+  margin-right: 10px;
+}
+.shape{
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  background-color: #14bf98;
+  padding: 5px;
+  height: 28px;
+  width:  28px;
+  display: grid;
+  place-items: center;
+}
+.header .shape:hover{
+  background-color: #fff;
+  transition: 0.3s;
+  a{
+    color: #14bf98;
+    transition: 0.3s;
+  }
+}
+
+/*----------------------------------page-1 ---------------------------------- */
+.page-1{
+  height: 145vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.89), rgba(0, 0, 255, 0)), url(hills.jpg);
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.contentp1{
+  color: white;
+  height: 300px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.contentp1 h1{
+  font-size: 3rem;
+  text-align: center;
+  margin:10px auto;
+  width: 90%;
+}
+.contentp1 p{
+  margin: 10px 35px;
+  text-align: center;
+  width: 90%;
+  line-height: 1.4;
+  
+}
+
+.change::before{
+  animation: change 2s ease-in-out  infinite;
+}
+@keyframes change{
+  0%{
+    content: 'ASAD';
+  }
+  10%{
+    content: 'jdajJS';
+  }
+  100%{
+    content: 'KAJSBD';
+  }
+}
+.contentp1 .btn{
+  padding: 14px 28px;
+  background-color: #14bf98;
+  color: #dfe5ec;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+}
+.contentp1 .btn:hover{
+  background-color: transparent;
+  transition:  ease-in-out;
+  border: 1px solid #14bf98;
+  color: #14bf98;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+
+
+/* ------------PAGE-2----------------------------------------------------------- */
+
+
+.page-2{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.page-2 .left{
+  width: 40%;
+}
+.page-2 .left .int{
+  color: #14bf98;
+  margin: 10px 0px;
+}
+.page-2 .left h1{
+  font-size: 1.7rem;
+  margin: 10px 0px;
+  word-spacing: 5px;
+}
+
+.page-2 .left p{
+  margin:10px 10px 10px 0px;
+}
+.page-2 .left h5{
+  font-size: 1.2rem;
+  margin:10px 10px 10px 0px;
+}
+.page-2 .right{
+  overflow: hidden;
+  transition: all .3s;
+}
+.page-2 img{
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.page-2 img:hover{
+  transform: scale(1.2);
+}
+
+
+/* ------------------------PAGE-3----------------------------------------- */
+
+.page-3{
+  background-color: aliceblue;
+  padding: 5%;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 30%;
+}
+.card h2{
+  margin-top: 15px;
+}
+.card p{
+  width: 80%;
+  margin-top: 7px;
+}
+.page-3 .icon{
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 74% 96%, 25% 96%, 0% 50%);
+  background-color: #14bf98;
+  padding: 5px;
+  height: 100px;
+  width:  105px;
+  display: grid;
+  place-items: center;
+}
+.page-3 .icon i{
+  color: white;
+  font-size: 2rem;
+}
+
+/* -----------------------------PAGE-4------------------------------------------------- */
+.page-4{
+  width: 100%;
+  height: 170vh;
+  padding: 5%;
+}
+.head{
+  text-align: center;
+  width: 40%;
+  margin:50px auto;
+}
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  margin-top: 60px;
+}
+.page-4 img{
+  width: 100%;
+  object-fit: cover;
+  height: 180px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.page-4 .card{
+  background-color: #fff;
+  width: 30%;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  border: 0.5px solid #0000001b;
+  /* text-align: center; */
+}
+
+.page-4 .card .content{
+  width: 80%;
+}
+.page-4 .card .content h2{
+  text-align: center;
+}
+.page-4 .card .content h2 span{
+  color: #14bf98;
+}
+.page-4 .card .content button{
+  padding: 8px 20px;
+  font-weight: 700;
+  color: white;
+  background-color: #14bf98;
+  position: relative;
+  left: 33%;
+  bottom: -20px;
+  border: none;
+  border-radius: 5px;
+
+}
+
+/* -----------------------PAGE-5------------------------- */
+
+.page-5{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-5 .left{
+  width: 50%;
+}
+.page-5 .left img{
+  width: 100%;
+  height: 101vh;
+  object-fit: cover;
+}
+.page-5 .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding:0% 5%;
+}
+.steps{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* .step{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+} */
+
+details{
+  cursor: pointer;
+  summary{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    &:hover{
+      color: #14bf98;
+    }
+  }
+  p{
+    padding-left: 55px;
+  }
+
+  &[open]{
+    summary{
+      color: #14bf98;
+      .circle{
+        border: 2px solid #14bf98;
+        background-color: #14bf98;
+        color: #fff;
+      }
+    }
+  }
+
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+}
+.page-5 h3{
+  display: inline;
+}
+.page-5 span{
+  background-color: #14bf98;
+  padding:2px 12px;
+  border-radius: 50%;
+  color: white; 
+}
+/* -------------------PAGE-6---------------------------------------------- */
+
+.page-6{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-6 .right{
+  width: 50%;
+}
+.page-6 .right img{
+  height: 100vh;
+  width: 100%;
+}
+.page-6 .left{
+  width: 50%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding:0px 60px;
+
+  .btn{
+    display: flex;
+    justify-content: space-between;
+
+    label{
+      font-size: 20px;
+    }
+  }
+
+  div:has(input:checked){
+    display: block;
+  }
+  .business-card{
+    input{
+      display: none;
+    }
+    display: none;
+  }
+}
+
+.page-6 a{
+  color: rgba(72, 74, 70, 0.8);
+}
+.page-6 .btn a{
+  color: rgba(72, 74, 70, 0.8);
+  font-size: 1.4rem;
+}
+.page-6 .btn{
+  text-align: center;
+  gap: 20px;
+}
+
+
+
+/* -------------------------------------------------------------- */
+.progress-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+.progress-item span{
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar{
+  height: 20px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: rgba(112, 128, 144, 0.398);
+  box-shadow: 0px 0px 2px;
+}
+.progress-fill{
+  height: 20px;
+  background: linear-gradient(to left, #14bf98, #058869b2);
+}
+
+.page-6 p::first-letter{
+  font-size: 35px;
+  font-weight: 600;
+  color: #14bf98;
+}
+.page-6 .bold{
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+
+/* -----------------------------PAGE-7-------------------------------------------------------- */
+.page-7{
+  width: 100%;
+  height: 100vh;
+  padding: 100px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.page-7 .top{
+  text-align: center;
+  
+}
+.page-7 .bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-7 .comment img{
+  width:  100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* -------------------------------PAGE-8---------------------------------------------------- */
+.page-8{
+  color: #dfe5ec;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  background-color: #153e52;
+
+  .left>:is(p,h1){
+    padding-top: 20px;
+  }
+}
+.page-8 .left{
+  width: 50%;
+
+  
+}
+
+.page-8 .left h1{
+  font-size: 1.5rem;
+}
+.page-8 li p{
+  color: #dfe5ec;
+}
+
+
+/* --------------FORM------------------ */
+.page-8 .right{
+  width: 50%;
+  padding-left: 40px;
+}
+.page-8 .right form>input,select{
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a5d77;
+  padding:0px 20px;
+  color: #fff;
+}
+
+
+.page-8 .right form>input:hover{
+  border: 1px solid #fff;
+}
+.page-8 .right form>select:hover{
+  border: 1px solid #fff;
+}
+
+.page-8 .right .submit{
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color:#14bf98;
+  color: #fff;
+}
+.page-8 .right .submit:hover{
+  border: 1px solid #fff;
+  background-color: #113448;
+  transition: .4s;
+}
+
+
+/* ---------------PAGE-9---------------------- */
+.page-9{
+  width: 100%;
+  height: 180vh;
+  position: relative;
+
+  .sub1{
+    text-align: center;
+    padding-top: 100px;
+  }
+  .sub2{
+    text-align: center;
+    margin-top: 80px;
+  }
+  .sub2>button{
+    padding: 3px 20px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dfe5ec53;
+    color: #333;
+    font-weight: 600;
+  }
+  .sub2>button:hover{
+    background-color: #14bf98;
+    color: #fff;
+  }
+  .sub3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px;
+  }
+  .img-box{
+    width:  250px;
+    height: 250px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    cursor: pointer;
+  }
+  img{
+    width:  250px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  
+  .shadow h3{
+    color: #fff;
+  }
+  .shadow{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    place-items: center;
+    background: rgba(0,0,0,0.4);
+    display: none;
+  }
+  
+  .img-box:hover img{
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .shadow{
+    display: grid;
+  }
+}
+
+
+
+/* -------------------------PAGE-10------------------------------------ */
+
+.page-10{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .sub1{
+    text-align: center;
+    width: 50%;
+    margin-bottom: 100px;
+  }
+  .sub2{
+    display: flex;
+    column-gap: 30px;
+    .profile{
+      clip-path: polygon(25% 6%, 75% 6%, 100% 50%, 76% 95%, 23% 95%, 0% 50%);
+    }
+    h5{
+      color: #333;
+      font-size: 1rem;
+    }
+    img{
+      width:  200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 1.2rem;
+      transition: 0.3s;
+    }
+    img:hover{
+      transform: scale(1.2);
+    }
+    .card{
+      text-align: center;
+    }
+    
+    .icon{
+      display: flex;
+      justify-content: center;
+    }
+    .icon li{
+      width: 30px;
+      height: 30px;
+    }
+    .icon a{
+      font-size: 12px;
+    }
+  }
+  
+  
+}
+
+
+/* -----------------PAGE-11-------------------------------------------------------- */
+
+.page-11{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .left{
+    width: 50%;
+    padding: 60px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .auto-incr{
+    display: flex;
+    span{
+      font-size: 2rem;
+    }
+  }
+}
+
+/* ----------------------------PAGE-12------------------------------------------------------ */
+.page-12{
+  color: #333;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+
+  .left{
+    width: 50%;
+  }
+  .left h1{
+    font-size: 2rem;
+  }
+  .left>:is(h1,p){
+    margin-top: 15px;
+  }
+  .address span{
+    
+    color: #14bf98;
+  }
+  
+  a{
+    color: #333;
+    text-decoration: underline;
+  }
+  
+  .shape{
+    clip-path: polygon(25% 7%, 74% 7%, 100% 50%, 74% 95%, 25% 96%, 0% 50%);
+    width:  55px;
+    height: 55px;
+    margin-top: 10px;
+  }
+  .shape:hover{
+    background-color: #fff;
+    a{
+      color: #14bf98;
+    }
+  }
+  li a{
+    color: #eee;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  /* --------------FORM------------------ */
+.right{
+  width: 50%;
+  padding-left: 40px;
+}
+.right form>input,textarea{
+  width: 100%;
+  height: 50px;
+  margin: 10px 0px;
+  outline: none;
+  border: 1px solid #55555542;
+  border-radius: 5px;
+  padding:0px 20px;
+  color: #333;
+}
+textarea{
+  height: 120px;
+}
+  .right form>input:hover{
+    border: 1px solid #222;
+  }
+  .right form>textarea:hover{
+    border: 1px solid #444;
+  }
+  
+  .right .submit{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color:#14bf98;
+    color: #fff;
+  }
+  .right .submit:hover{
+    border: 2px solid #14bf98;
+    background-color: #fff;
+    transition: .4s;
+    color: #333;
+  }
+}
+/* --------------------------PAGE-13-------------------------------------------------------------- */
+.page-13{
+  width: 100%;
+  height: 45vh;
+  background-color: #113448;
+  display: flex;
+  justify-content: center;
+  padding: 60px 50px 0px 50px;
+  .details{
+    width: 25%;
+    padding: 10px;
+    color: #fff;
+    h2{
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+    p{
+      font-size: 0.8rem;
+    }
+    a{
+      text-decoration: underline;
+      font-size: 0.8rem;
+      display: flex;
+    }
+  }
+  .first{
+    width: 60%;
+    padding: 10px 90px 10px 30px;
+  }  
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------- */
+.about-me{
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(#024b3a , #14bf98, #024b3a);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+  .shape-img{
+    clip-path: polygon(25% 7%, 74% 7%, 100% 50%, 74% 95%, 25% 96%, 0% 50%);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+  }
+  img{
+    width: 150px;
+    height: 155px;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: 0.3s;
+  }
+  img:hover{
+    transform: scale(1.1);
+  }
+  .middle{
+    a{
+      color: brown;
+      text-decoration: underline;
+      font-size: 1rem;
+      padding-left: 10px;
+    }
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 600;
+    }
+  }
+  .right{
+    ul{
+      display: flex;
+      column-gap: 20px;
+    }
+    .shape{
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(#113448, #14bf98, #113448);
+    }
+  } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------**--------------MEDIAQUERY---------------------**----------------- */
+
+@media screen and (max-width:768px){
+  .baricon{
+    display: contents;
+  }
+} 
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) { 
+  .nav{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:990px){
+  .icon{
+    display: none;
+  }
+  body{
+    background-color: red;
+  }
+
+  .page-6 , .page-5, .page-2, .page-3{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+  }
+  .page-3{
+    height: auto;
+  }
+
+  .page-6 .right, .page-6 .left,
+  .page-5 .right, .page-5 .left{
+    width: 100%;
+    margin: auto;
+  }
+}
+@media only screen and (max-width:768px){
+  .nav{
+    display: none;
+  }
+}
+@media only screen and (max-width:780){
+
+}
